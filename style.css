@@ -1,0 +1,317 @@
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #1e3a8a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #bfdbfe;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Welcome */
+
+.welcome {
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+/* Section headings */
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* Sensor Grid */
+
+.sensor-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 50px;
+}
+
+
+/* Sensor Card */
+
+.sensor-card {
+
+    background: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.sensor-card:hover {
+    transform: translateY(-5px);
+}
+
+.sensor-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.sensor-card h3 {
+    margin-bottom: 10px;
+}
+
+.value {
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* Status */
+
+.status {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.online {
+    background: #dcfce7;
+    color: #166534;
+}
+
+
+/* Monitoring */
+
+.monitoring {
+    margin-bottom: 50px;
+}
+
+
+/* Table */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    text-align: center;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+.table-status {
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 5px 12px;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+}
+
+
+/* Button */
+
+button {
+
+    display: block;
+
+    margin: 25px auto;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* About */
+
+.about {
+
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    border-radius: 12px;
+}
+
+
+/* Footer */
+
+footer {
+
+    background: #1e293b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .sensor-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .sensor-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .welcome h1 {
+
+        font-size: 25px;
+    }
+
+    .logo {
+
+        font-size: 26px;
+    }
+
+}

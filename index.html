@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SensorGrid - IoT Monitoring Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            🌐 SensorGrid
+        </div>
+
+        <p>IoT Monitoring Platform</p>
+    </header>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sensors">Sensors</a>
+        <a href="#monitoring">Monitoring</a>
+        <a href="#about">About</a>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="welcome">
+            <h1>SensorGrid Dashboard</h1>
+
+            <p>
+                Monitor your IoT sensors in real time
+            </p>
+        </section>
+
+
+        <!-- Sensor Cards -->
+        <section id="sensors">
+
+            <h2>Sensor Overview</h2>
+
+            <div class="sensor-grid">
+
+                <!-- Temperature -->
+                <article class="sensor-card">
+
+                    <div class="sensor-icon">🌡️</div>
+
+                    <h3>Temperature</h3>
+
+                    <p class="value" id="temperature">
+                        28°C
+                    </p>
+
+                    <span class="status online">
+                        ● Online
+                    </span>
+
+                </article>
+
+
+                <!-- Water Level -->
+                <article class="sensor-card">
+
+                    <div class="sensor-icon">💧</div>
+
+                    <h3>Water Level</h3>
+
+                    <p class="value" id="water">
+                        72%
+                    </p>
+
+                    <span class="status online">
+                        ● Online
+                    </span>
+
+                </article>
+
+
+                <!-- Air Quality -->
+                <article class="sensor-card">
+
+                    <div class="sensor-icon">🌫️</div>
+
+                    <h3>Air Quality</h3>
+
+                    <p class="value" id="air">
+                        Good
+                    </p>
+
+                    <span class="status online">
+                        ● Online
+                    </span>
+
+                </article>
+
+
+                <!-- Light -->
+                <article class="sensor-card">
+
+                    <div class="sensor-icon">💡</div>
+
+                    <h3>Light Intensity</h3>
+
+                    <p class="value" id="light">
+                        650 lux
+                    </p>
+
+                    <span class="status online">
+                        ● Online
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Monitoring Section -->
+        <section id="monitoring" class="monitoring">
+
+            <h2>Sensor Status</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Value</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Temperature</td>
+                            <td>28°C</td>
+                            <td>
+                                <span class="table-status">
+                                    Online
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Water Level</td>
+                            <td>72%</td>
+                            <td>
+                                <span class="table-status">
+                                    Online
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Air Quality</td>
+                            <td>Good</td>
+                            <td>
+                                <span class="table-status">
+                                    Online
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Light Intensity</td>
+                            <td>650 lux</td>
+                            <td>
+                                <span class="table-status">
+                                    Online
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- Button -->
+            <button onclick="refreshSensors()">
+                🔄 Refresh Sensors
+            </button>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="about">
+
+            <h2>About SensorGrid</h2>
+
+            <p>
+                SensorGrid is an IoT monitoring dashboard used
+                to display sensor values and their current status.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SensorGrid IoT Platform
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
